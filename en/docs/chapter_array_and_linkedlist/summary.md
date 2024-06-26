@@ -42,9 +42,9 @@ From a garbage collection perspective, for languages with automatic garbage coll
 
 If an element is searched first and then deleted, the time complexity is indeed `O(n)`. However, the `O(1)` advantage of linked lists in insertion and deletion can be realized in other applications. For example, in the implementation of double-ended queues using linked lists, we maintain pointers always pointing to the head and tail nodes, making each insertion and deletion operation `O(1)`.
 
-**Q**: In the image "Linked List Definition and Storage Method", do the light blue storage nodes occupy a single memory address, or do they share half with the node value?
+**Q**: In the figure "Linked List Definition and Storage Method", do the light blue storage nodes occupy a single memory address, or do they share half with the node value?
 
-The diagram is just a qualitative representation; quantitative analysis depends on specific situations.
+The figure is just a qualitative representation; quantitative analysis depends on specific situations.
 
 - Different types of node values occupy different amounts of space, such as int, long, double, and object instances.
 - The memory space occupied by pointer variables depends on the operating system and compilation environment used, usually 8 bytes or 4 bytes.
@@ -74,7 +74,7 @@ On the other hand, linked lists are primarily necessary for binary trees and gra
 
 **Q**: Does initializing a list `res = [0] * self.size()` result in each element of `res` referencing the same address?
 
-No. However, this issue arises with two-dimensional arrays, for example, initializing a two-dimensional list `res = [[0] * self.size()]` would reference the same list `[0]` multiple times.
+No. However, this issue arises with two-dimensional arrays, for example, initializing a two-dimensional list `res = [[0]] * self.size()` would reference the same list `[0]` multiple times.
 
 **Q**: In deleting a node, is it necessary to break the reference to its successor node?
 

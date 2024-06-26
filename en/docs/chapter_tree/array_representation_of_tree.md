@@ -22,7 +22,7 @@ As shown in the figure below, given a non-perfect binary tree, the above method 
 
 ![Level-order traversal sequence corresponds to multiple binary tree possibilities](array_representation_of_tree.assets/array_representation_without_empty.png)
 
-To solve this problem, **we can consider explicitly writing out all `None` values in the level-order traversal sequence**. As shown in the following figure, after this treatment, the level-order traversal sequence can uniquely represent a binary tree. Example code is as follows:
+To solve this problem, **we can consider explicitly writing out all `None` values in the level-order traversal sequence**. As shown in the figure below, after this treatment, the level-order traversal sequence can uniquely represent a binary tree. Example code is as follows:
 
 === "Python"
 
@@ -143,7 +143,7 @@ This means that when using an array to represent a complete binary tree, it's po
 The following code implements a binary tree based on array representation, including the following operations:
 
 - Given a node, obtain its value, left (right) child node, and parent node.
-- Obtain the preorder, inorder, postorder, and level-order traversal sequences.
+- Obtain the pre-order, in-order, post-order, and level-order traversal sequences.
 
 ```src
 [file]{array_binary_tree}-[class]{array_binary_tree}-[func]{}
