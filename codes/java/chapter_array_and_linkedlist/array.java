@@ -75,31 +75,32 @@ public class array {
     public static void main(String[] args) {
         /* 初始化数组 */
         int[] arr = new int[5];
-        System.out.println("数组 arr = " + Arrays.toString(arr));
+        System.out.println("To print something");
+        System.out.println("Array arr = " + Arrays.toString(arr));
         int[] nums = { 1, 3, 2, 5, 4 };
-        System.out.println("数组 nums = " + Arrays.toString(nums));
+        System.out.println("Array nums = " + Arrays.toString(nums));
 
         /* 随机访问 */
         int randomNum = randomAccess(nums);
-        System.out.println("在 nums 中获取随机元素 " + randomNum);
+        System.out.println("Pick random number from nums  " + randomNum);
 
         /* 长度扩展 */
         nums = extend(nums, 3);
-        System.out.println("将数组长度扩展至 8 ，得到 nums = " + Arrays.toString(nums));
+        System.out.println("Extend array to 8 get nums = " + Arrays.toString(nums));
 
         /* 插入元素 */
         insert(nums, 6, 3);
-        System.out.println("在索引 3 处插入数字 6 ，得到 nums = " + Arrays.toString(nums));
+        System.out.println("Insert at Index position of 3 with number 6 get nums = " + Arrays.toString(nums));
 
         /* 删除元素 */
         remove(nums, 2);
-        System.out.println("删除索引 2 处的元素，得到 nums = " + Arrays.toString(nums));
+        System.out.println("Delete index of 2 data element，get nums = " + Arrays.toString(nums));
 
         /* 遍历数组 */
         traverse(nums);
 
         /* 查找元素 */
         int index = find(nums, 3);
-        System.out.println("在 nums 中查找元素 3 ，得到索引 = " + index);
+        System.out.println("Search nums with 3，get index = " + index);
     }
 }
