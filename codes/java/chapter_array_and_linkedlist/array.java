@@ -102,5 +102,7 @@ public class array {
         /* 查找元素 */
         int index = find(nums, 3);
         System.out.println("Search nums with 3，get index = " + index);
+        System.out.println("Kaiyu changed chinese output to english outpu");
+
     }
 }
